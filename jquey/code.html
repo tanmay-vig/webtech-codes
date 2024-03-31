@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 , shrink-to-fit=no "
+    />
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Jquery Practice</title>
+  </head>
+  <body>
+    <div id="l">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi veniam
+      reiciendis quos, totam maiores alias consequuntur ab neque error corrupti
+      natus? Eligendi enim neque quibusdam, perferendis doloribus ullam
+      architecto?
+    </div>
+
+    <div id="r">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi veniam
+      reiciendis quos, totam maiores alias consequuntur ab neque error corrupti
+      natus? Eligendi enim neque quibusdam, perferendis doloribus ullam
+      architecto?
+     </div>
+
+     <button id="t">Trying after before</button>
+     <script>
+        $('#l').css('color','red')
+        $('#r').css({'color':'blue' , 'font-size':'20px' , 'background-color':'yellow'})
+        $("#t").click( ()=> {
+            $('#t').before('<p>Before</p>')
+            $('#t').after('<p>After</p>')
+        })
+     </script>
+
+  </body>
+</html>
