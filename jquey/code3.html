@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Example</title>
+    <style>
+        .my-button {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.my-button').hover(function() {
+                $(this).css('background-color', 'black');
+                $(this).css('color', 'white');
+            }, function() {
+                $(this).css('background-color', 'white');
+                $(this).css('color', 'black');
+            });
+
+            $('.my-button').click(function() {
+                $(this).text('Button Clicked!');
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="my-button">Hover Me</button>
+</body>
+</html>
