@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b").click(function(){
+                $("#f").before("<h2>Hello Jiit</h2>");
+            });
+            $("#a").click(function(){
+                $("#f").after("<h2>Bye Jiit</h2>");
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <div style="border: 1px solid black;" id="f">
+        <h1>JIIT</h1>
+        <div>JAYPEE INSTITUTE OF INFORMATION TECHNOLOGY </div>
+    </div>
+
+    <button id="b">Before</button>
+    <button id="a">after</button>
+</body>
+</html>
